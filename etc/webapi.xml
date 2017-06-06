@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright © 2015 Netrix AB. All rights reserved.
+ * Copyright © 2015 FiveStones AB. All rights reserved.
  */
 -->
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
     <route url="/V1/categories/search" method="GET">
-        <service class="Netrix\Catalog\Api\NxCategoryRepositoryInterface" method="getList" />
+        <service class="FiveStones\Catalog\Api\CategoryRepositoryInterface" method="getList" />
         <resources>
             <resource ref="anonymous" />
         </resources>

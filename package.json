@@ -1,0 +1,27 @@
+{
+  "name": "magento2-search-category",
+  "version": "1.0.0",
+  "description": "Add search to categories index",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5-stones/magento2-search-category.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/5-stones/magento2-search-category/issues"
+  },
+  "homepage": "https://github.com/5-stones/magento2-search-category#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

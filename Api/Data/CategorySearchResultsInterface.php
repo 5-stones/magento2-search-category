@@ -6,12 +6,14 @@
  * Time: 11:10
  */
 
-namespace Netrix\Catalog\Api\Data;
+namespace FiveStones\Catalog\Api\Data;
+
+use Magento\Framework\Api\SearchResultsInterface;
 
 /**
  * @api
  */
-interface NxCategorySearchResultsInterface extends \Magento\Framework\Api\SearchResultsInterface
+interface CategorySearchResultsInterface extends SearchResultsInterface
 {
     /**
      * Get attributes list.

@@ -6,12 +6,12 @@
  * Time: 08:34
  */
 
-namespace Netrix\Catalog\Model;
+namespace FiveStones\Catalog\Model;
 
-use Netrix\Catalog\Api\NxCategoryRepositoryInterface;
+use FiveStones\Catalog\Api\CategoryRepositoryInterface;
 use Magento\Framework\Api\SearchCriteriaInterface;
 
-class NxCategoryRepository implements NxCategoryRepositoryInterface
+class CategoryRepository implements CategoryRepositoryInterface
 {
     /**
      * @var \Magento\Catalog\Model\ResourceModel\Category\CollectionFactory
@@ -34,7 +34,7 @@ class NxCategoryRepository implements NxCategoryRepositoryInterface
     protected $searchCriteriaBuilder;
 
     /**
-     * @var \Netrix\Catalog\Api\Data\NxCategorySearchResultsInterfaceFactory
+     * @var \FiveStones\Catalog\Api\Data\CategorySearchResultsInterfaceFactory
      */
     protected $searchResultsFactory;
 
@@ -42,14 +42,14 @@ class NxCategoryRepository implements NxCategoryRepositoryInterface
      * @param \Magento\Catalog\Model\ResourceModel\Category\CollectionFactory $collectionFactory
      * @param \Magento\Framework\Api\ExtensionAttribute\JoinProcessorInterface $extensionAttributesJoinProcessor
      * @param \Magento\Catalog\Api\CategoryAttributeRepositoryInterface $metadataServiceInterface
-     * @param \Netrix\Catalog\Api\Data\NxCategorySearchResultsInterfaceFactory $searchResultsFactory
+     * @param \FiveStones\Catalog\Api\Data\CategorySearchResultsInterfaceFactory $searchResultsFactory
      */
     public function __construct(
         \Magento\Catalog\Model\ResourceModel\Category\CollectionFactory $collectionFactory,
         \Magento\Framework\Api\ExtensionAttribute\JoinProcessorInterface $extensionAttributesJoinProcessor,
         \Magento\Catalog\Api\CategoryAttributeRepositoryInterface $metadataServiceInterface,
         \Magento\Framework\Api\SearchCriteriaBuilder $searchCriteriaBuilder,
-        \Netrix\Catalog\Api\Data\NxCategorySearchResultsInterfaceFactory $searchResultsFactory
+        \FiveStones\Catalog\Api\Data\CategorySearchResultsInterfaceFactory $searchResultsFactory
     ) {
         $this->collectionFactory = $collectionFactory;
         $this->extensionAttributesJoinProcessor = $extensionAttributesJoinProcessor;

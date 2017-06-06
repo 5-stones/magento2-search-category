@@ -1,0 +1,27 @@
+{
+    "name": "5stones/magento2-search-category",
+    "description": "Add search filters to categories index",
+    "type": "magento2-module",
+    "authors": [
+        {
+            "name": "Jacob Spizziri",
+            "email": "jspizziri@weareFiveStones.com"
+        }
+    ],
+    "require": {},
+    "version": "1.0.0",
+    "extra": {
+        "map": [
+            [
+                "*",
+                "FiveStones/Catalog"
+            ]
+        ]
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "FiveStones\\Catalog\\": ""
+        }
+    }
+}

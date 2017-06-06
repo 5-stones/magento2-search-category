@@ -6,20 +6,20 @@
  * Time: 08:26
  */
 
-namespace Netrix\Catalog\Api;
+namespace FiveStones\Catalog\Api;
 
 use Magento\Framework\Api\SearchCriteriaInterface;
 
 /**
  * @api
  */
-interface NxCategoryRepositoryInterface
+interface CategoryRepositoryInterface
 {
     /**
      * Get category list
      *
      * @param \Magento\Framework\Api\SearchCriteriaInterface $searchCriteria
-     * @return \Netrix\Catalog\Api\Data\NxCategorySearchResultsInterface
+     * @return \FiveStones\Catalog\Api\Data\CategorySearchResultsInterface
      */
     public function getList(SearchCriteriaInterface $searchCriteria);
 }
